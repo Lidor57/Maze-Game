@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="410" prefHeight="500"
+            style="-fx-background-image: url('/mainScreen.jpg');
+                   -fx-background-size: stretch;
+                   -fx-background-position: center;
+                   -fx-background-repeat: no-repeat;">
+
+    <VBox spacing="15" layoutX="20" layoutY="20"
+          style="-fx-background-color: rgba(255,255,255,0.85); -fx-padding: 20; -fx-background-radius: 10;">
+
+    <Label text="🎮 Game Instructions" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <Label text="Movement keys:" style="-fx-font-weight: bold;"/>
+        <Label text="8 - Move Up"/>
+        <Label text="2 - Move Down"/>
+        <Label text="4 - Move Left"/>
+        <Label text="6 - Move Right"/>
+        <Label text="7 - Move Up-Left"/>
+        <Label text="9 - Move Up-Right"/>
+        <Label text="1 - Move Down-Left"/>
+        <Label text="3 - Move Down-Right"/>
+
+        <Separator/>
+
+        <Label text="Goal: Reach the destination point."/>
+        <Label text="Cannot move through walls."/>
+        <Label text="You can choose different characters and solving algorithms in Options."/>
+        <Label text="You can press 'Solve' to auto-solve the maze."/>
+    </VBox>
+</AnchorPane>

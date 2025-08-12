@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="View.Controllers.MainMenuController"
+           fx:id="rootPane">
+
+    <!-- Background Image that scales with window -->
+    <ImageView fx:id="mainImageView" pickOnBounds="true" preserveRatio="false"
+               fitWidth="${rootPane.width}" fitHeight="${rootPane.height}">
+        <image>
+            <Image url="@/mainScreen.jpg"/>
+        </image>
+    </ImageView>
+
+    <!-- Buttons centered in VBox -->
+    <VBox spacing="15" alignment="CENTER" style="-fx-padding: 40;">
+        <Button text="New Game" onAction="#onNewClicked" prefWidth="200"/>
+        <Button text="Load" onAction="#onLoadClicked" prefWidth="200"/>
+        <Button text="Options" onAction="#onOptionsClicked" prefWidth="200"/>
+        <Button text="About" onAction="#onAboutClicked" prefWidth="200"/>
+        <Button text="Exit" onAction="#onExitClicked" prefWidth="200"/>
+    </VBox>
+
+</StackPane>

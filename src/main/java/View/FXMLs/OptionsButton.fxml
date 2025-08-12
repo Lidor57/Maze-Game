@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="View.Controllers.OptionsButtonController"
+           prefHeight="400.0" prefWidth="500.0"
+           style="-fx-padding: 20;">
+
+    <VBox spacing="15.0" alignment="CENTER">
+
+        <!-- Maze Generating Algorithm -->
+        <HBox spacing="10.0" alignment="CENTER">
+            <Label text="Maze Generating Algorithm:"/>
+            <ComboBox fx:id="mazeGenComboBox" prefWidth="150.0"/>
+        </HBox>
+
+        <!-- Music Option -->
+        <HBox alignment="CENTER">
+            <CheckBox fx:id="musicCheckBox" text="Play Music" selected="true"/>
+        </HBox>
+
+        <!-- Solving Algorithm -->
+        <HBox spacing="10.0" alignment="CENTER">
+            <Label text="Solving Algorithm:"/>
+            <ComboBox fx:id="algorithmComboBox" prefWidth="150.0"/>
+        </HBox>
+
+        <!-- Character Choice -->
+        <HBox spacing="10.0" alignment="CENTER">
+            <Label text="Player Character:"/>
+            <ComboBox fx:id="characterComboBox" prefWidth="150.0"/>
+        </HBox>
+
+        <!-- Thread Pool Size -->
+        <HBox spacing="10.0" alignment="CENTER">
+            <Label text="Thread Pool Size:"/>
+            <TextField fx:id="poolSizeTextField" prefWidth="100.0"/>
+        </HBox>
+
+        <!-- Save Button -->
+        <HBox alignment="CENTER">
+            <Button text="Save Settings" onAction="#handleSaveSettings"/>
+        </HBox>
+
+    </VBox>
+
+</StackPane>

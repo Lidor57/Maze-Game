@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx/16"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controllers.MazeCompletedPopupController"
+      style="-fx-padding: 20;">
+
+    <Label text="Congratulations! You solved the maze!"/>
+    <HBox spacing="20" alignment="CENTER">
+        <Button fx:id="playAgainButton" text="Play Again" onAction="#handlePlayAgain"/>
+        <Button fx:id="backToMenuButton" text="Back to Menu" onAction="#handleBackToMenu"/>
+    </HBox>
+</VBox>

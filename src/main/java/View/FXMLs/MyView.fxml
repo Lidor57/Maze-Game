@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import View.MazeDisplayer?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.Controllers.MyViewController"
+            stylesheets="@../MainStyle.css">
+
+    <top>
+        <HBox spacing="10"
+              alignment="CENTER"
+              prefHeight="40"
+              style="-fx-padding: 10;
+                 -fx-background-image: url('/KrustyKrab_floor.png');
+                 -fx-background-size: cover;
+                 -fx-background-position: center;
+                 -fx-background-repeat: no-repeat;">
+            <Button text="Solve" onAction="#onSolveClicked"/>
+            <Button text="Save" onAction="#onSaveClicked"/>
+            <Button text="Help" onAction="#onHelpClicked"/>
+            <Button text="Back" onAction="#onBackClicked"/>
+        </HBox>
+    </top>
+
+    <center>
+        <StackPane fx:id="displayerPane" alignment="CENTER" onKeyPressed="#handleKeyPressed">
+            <MazeDisplayer fx:id="mazeDisplayer"
+                           imageFileNameBackground="BikiniBottom.png"
+                           imageFileNameGoal="krabbyPatty.png"
+                           imageFileNamePlayer="spongebob.png"
+                           imageFileNameWall="seaWeed.png"/>
+        </StackPane>
+    </center>
+</BorderPane>
